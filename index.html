@@ -35,7 +35,45 @@
       <p id="currentDay" class="lead"></p>
     </header>
     
-
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3>Project Form</h3>
+          <form id="project-form">
+            <div class="row py-3">
+              <label for="project" class="col-sm-4 col-form-label"
+                >Project Name:
+              </label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="project-name" />
+              </div>
+            </div>
+            <div class="row py-3">
+              <label for="date" class="col-sm-4 col-form-label">Date: </label>
+              <div class="col-sm-8">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="datepicker"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <div class="py-3">
+              <button type="submit" value="Submit" class="btn btn-info">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <h3>List of Projects:</h3>
+          <div class="py-3">
+            <ul class="list-group" id="project-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
